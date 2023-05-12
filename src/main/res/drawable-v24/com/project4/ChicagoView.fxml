@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project4.ChicagoPizzaController">
+   <children>
+      <BorderPane prefHeight="573.0" prefWidth="550.0">
+         <top>
+            <AnchorPane prefHeight="101.0" prefWidth="550.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="247.0" layoutY="42.0" text="Chicago Style Pizza" translateX="-100.0" translateY="-12.0">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <GridPane prefWidth="230.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="174.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="335.0" minHeight="0.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="402.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="402.0" minHeight="5.0" prefHeight="205.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="402.0" minHeight="10.0" prefHeight="67.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <RadioButton fx:id="rButtonLarge" mnemonicParsing="false" text="Large" translateX="173.0" GridPane.rowIndex="1">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="size" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="rButtonMedium" mnemonicParsing="false" text="Medium" toggleGroup="$size" translateX="99.0" GridPane.rowIndex="1" />
+                  <RadioButton fx:id="rButtonSmall" mnemonicParsing="false" selected="true" text="Small" toggleGroup="$size" translateX="40.0" GridPane.rowIndex="1" />
+                  <Label text="Crust: " translateX="39.0" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="crust" editable="false" maxWidth="150.0" prefHeight="25.0" prefWidth="150.0" translateX="75.0" GridPane.rowIndex="2" />
+                  <Label text="Available Toppings" translateX="38.0" translateY="-88.0" GridPane.rowIndex="3" />
+                  <ListView fx:id="toppingsAvaliablelv" maxHeight="177.0" maxWidth="189.0" prefHeight="177.0" prefWidth="189.0" translateX="36.0" translateY="9.0" GridPane.rowIndex="3" />
+                  <Label text="Price: $" translateX="38.0" GridPane.rowIndex="4" />
+                  <TextField fx:id="price" editable="false" maxWidth="80.0" prefHeight="25.0" prefWidth="155.0" translateX="79.0" GridPane.rowIndex="4" />
+                  <ComboBox fx:id="pizzaType" prefHeight="25.0" prefWidth="187.0" translateX="38.0" />
+               </children>
+            </GridPane>
+         </left>
+         <right>
+            <GridPane prefWidth="230.0" BorderPane.alignment="CENTER">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="402.0" minHeight="10.0" prefHeight="155.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="402.0" minHeight="5.0" prefHeight="218.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="402.0" minHeight="10.0" prefHeight="71.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label text="Selected Toppings" translateX="13.0" translateY="-88.0" GridPane.rowIndex="1" />
+                  <ListView fx:id="toppingsSelectedlv" maxHeight="177.0" maxWidth="189.0" prefHeight="177.0" prefWidth="189.0" translateX="10.0" translateY="9.0" GridPane.rowIndex="1" />
+                  <ImageView fx:id="pizzaShuffle" fitHeight="150.0" fitWidth="229.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button fx:id="addToOrder" mnemonicParsing="false" onAction="#addToOrder" prefHeight="25.0" prefWidth="118.0" text="Add to Order" translateX="45.0" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+         </right>
+         <center>
+            <VBox prefHeight="227.0" prefWidth="90.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="addTopping" mnemonicParsing="false" onAction="#addToTopping" text="&gt;&gt;&gt;" translateX="25.0" translateY="230.0" />
+                  <Button fx:id="removeTopping" mnemonicParsing="false" onAction="#removeFromTopping" text="&lt;&lt;&lt;" translateX="25.0" translateY="260.0" />
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</VBox>

@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">RU Pizza</string>
+    <string name="home">Home</string>
+    <string name="chicago">Chicago Style Pizza</string>
+    <string name="newYork">New York Style Pizzas</string>
+    <string name="cart">Cart</string>
+    <string name="store">Store</string>
+    <string name="storeOrder">Store Orders</string>
+    <string name="bbqChicken">BBQ Chicken</string>
+    <string name="byo">Build Your Own Pizzas</string>
+    <string name="menu">Menu</string>
+    <string name="crust">Crust Style: </string>
+    <string name="currentOrder">Current Order</string>
+    <string name="temp">temp</string>
+    <string name="small">Small</string>
+    <string name="medium">Medium</string>
+    <string name="large">Large</string>
+    <string name="addtoOrder">Add to Order</string>
+    <string name="num"># </string>
+    <string name="cancelOrder">Cancel Order</string>
+    <string name="placeOrder">Place Order</string>
+    <string name="orderNum">Order # </string>
+    <string name="Subtotal">Subtotal: $ </string>
+    <string name="Tax">Tax: $ </string>
+    <string name="Total">Total: $ </string>
+    <string name="orderTotal">Order Total: $ </string>
+    <string name="zero">0.00</string>
+    <string name="smDeluxe">14.99</string>
+    <string name="medDeluxe">16.99</string>
+    <string name="lgDeluxe">18.99</string>
+    <string name="sbbq">13.99</string>
+    <string name="mbbq">15.99</string>
+    <string name="lbbq">17.99</string>
+    <string name="lmeatzza">17.99</string>
+    <string name="sbyo">8.99</string>
+    <string name="removeOrder">Remove Order</string>
+
+    <string name="toppings">Select Toppings</string>
+    <string name="sausage">Sausage</string>
+    <string name="pepperoni">Pepperoni</string>
+    <string name="pepper">Green Pepper</string>
+    <string name="onion">Onion</string>
+    <string name="mushroom">Mushroom</string>
+    <string name="provolone">Provolone</string>
+    <string name="cheddar">Cheddar</string>
+    <string name="beef">Beef</string>
+    <string name="ham">Ham</string>
+    <string name="olives">Olives</string>
+    <string name="pineapple">Pineapple</string>
+    <string name="bacon">Bacon</string>
+
+
+    <string name="price">Price: $ </string>
+
+
+</resources>
